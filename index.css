@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container .first-article {
+  background-color: #013243;
+  padding: 3rem 1.5rem 0;
+  text-align: center;
+}
+
+.container .first-article h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container .first-article p {
+  color: #86bfd3;
+}
+
+.container .second-article {
+  background-color: #fff;
+  padding: 3rem 1.5rem;
+}
+
+.container .second-article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container .second-article form {
+  display: grid;
+  gap: 1rem;
+}
+
+.container .second-article form label {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.container .second-article form input:not(input[type="checkbox"]) {
+  font-size: 1rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid #999;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.container .second-article form small a {
+  color: #013243;
+  font-weight: bold;
+}
+
+.container .second-article form button {
+  background-color: #013243;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("./assets/Background.png") no-repeat center/cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 5rem auto;
+  }
+
+  .container .first-article {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .container .second-article {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+  }
+
+  .container .first-article {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .container .second-article {
+    display: grid;
+    place-content: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
